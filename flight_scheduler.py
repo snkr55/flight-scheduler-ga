@@ -25,7 +25,7 @@ destiny = 'FCO' # Rome
 # Sample flights dictionary format: flights{(origin, destiny):[departure, arrival, price]}
 
 flights = {}
-for row in open(r"C:\Users\DELL\Documents\Personal\My Learning Journey\Genetic-Algorithm\flight_schedule\flights.txt"):
+for row in open(r"C:\Users\DELL\Documents\Personal\PORTFOLIO\Genetic-Algorithm\Flight-Schedule\flight-scheduler-ga\flights.txt"):
     origin, destiny, departure, arrival, price = row.split(',')
     flights.setdefault((origin, destiny),[])
     flights[(origin,destiny)].append((departure,arrival,int(price)))
