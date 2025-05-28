@@ -316,17 +316,19 @@ def genetic_algorithm(domain, fitness_function, population_size=100, elitism = 0
 
 # =================== EXECUTION OF GENETIC ALGORITHM ====================
 
-best_schedule = genetic_algorithm(domain, fitness_function, population_size=100, elitism=0.2, generation=100, mut_prob=0.05)
+best_schedule = genetic_algorithm(domain, fitness_function, population_size=100, elitism=0.2, generation=500, mut_prob=0.05)
 
 # To print the best schedule found by the genetic algorithm
 print('Best Schedule:', best_schedule)
+
+# To print the fitness score for the best schedule
+print('FITNESS SCORE:', fitness_function(best_schedule))
 
 # To print the flight details for the best schedule
 print_schedule(best_schedule)
 
 # To print total wait time for the best schedule
-total_wait_time_of_best_schedule = fitness_function(best_schedule) - print_schedule(best_schedule, display_schedule_and_price = False)
-print(f'TOTAL WAIT TIME: {total_wait_time_of_best_schedule} minutes')
-
-# To print the fitness score for the best schedule
-print('FITNESS SCORE:', fitness_function(best_schedule))
+total_wait_time_minutes = fitness_function(best_schedule) - print_schedule(best_schedule, display_schedule_and_price=False)
+hours = total_wait_time_minutes // 60
+minutes = total_wait_time_minutes % 60
+print(f'TOTAL WAIT TIME: {hours} hours {minutes} minutes')
