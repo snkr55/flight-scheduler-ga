@@ -1,6 +1,6 @@
-# 🧬 Genetic Algorithm: Flight Scheduler 
+# Genetic Algorithm: Flight Scheduler 
 
-## ✈️ Problem Statement
+## Problem Statement
 
 Six people are traveling from six different cities — **Lisbon, Dublin, Madrid, Brussels, London, and Paris** — to a common destination, **Rome**, to attend a meeting and group activity.  
 
@@ -13,16 +13,16 @@ They want to:
 - **Minimize total waiting time** (at Rome airport for both arrival and departure)
 - **Minimize the total flight cost** for all travelers
 
-## 🧠 Objective
+## Objective
 
 The goal is to find an **optimized flight schedule** for all travelers that minimizes:
 
-- 💸 **Total cost** of all flights (outbound + return)
-- ⏳ **Total waiting time** (for both arrival and departure windows)
+- **Total cost** of all flights (outbound + return)
+- **Total waiting time** (for both arrival and departure windows)
 
 This is a classic **multi-objective optimization problem**, solved using a **Genetic Algorithm**.
 
-## ⚙️ Genetic Algorithm Approach
+## Genetic Algorithm Approach
 
 The Genetic Algorithm (GA) is inspired by natural selection, using:
 
@@ -32,7 +32,7 @@ The Genetic Algorithm (GA) is inspired by natural selection, using:
 - **Crossover**: Combines pairs of solutions to create new ones
 - **Mutation**: Introduces slight changes to maintain diversity
 
-## 🧩 Data Overview
+## Data Overview
 
 Each person has:
 
@@ -45,14 +45,14 @@ Each flight includes:
 - Arrival time
 - Cost
 
-## 📈 Output
+## Output
 
 The GA produces:
 
-- ✅ An optimal or near-optimal flight schedule
-- 📋 Tabular summary of selected flights per person
-- 📊 Total cost, total waiting time, and fitness score
+- An optimal or near-optimal flight schedule
+- Tabular summary of selected flights per person
+- Total cost, total waiting time, and fitness score
 
-## 🔍 Example Output
+## Example Output
 ![image](https://github.com/user-attachments/assets/9cece592-f0b0-463f-8b7b-586e832cfcfe)
 
